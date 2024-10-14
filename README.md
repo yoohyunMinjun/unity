@@ -21,5 +21,5 @@ git commit -m 'DELETE:: 사용하지 않는 태그 삭제'
 $git status
 $git add . 
 $git commit -m "(커밋예시에 맞게)" 
-$git push -u origin bb
+$git push -u origin master
 ```
