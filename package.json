@@ -1,0 +1,20 @@
+{
+  "name": "unity",
+  "version": "1.0.0",
+  "description": "|          |                                                    | | :------: | :------------------------------------------------: | |   ADD    | 새로운 기능, 컴포넌트 등 새로운 것이 추가되었을 때 | |   FIX    |      기존의 코드에서 잘못된 부분을 수정할 때       | | REFACTOR |       기존의 있는 코드를 리팩토링 하였을 때        | |  DELETE  |          기존의 있던 내용을 삭제하였을 때          |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.3"
+  }
+}
