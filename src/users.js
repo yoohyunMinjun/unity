@@ -7,7 +7,7 @@ require('dotenv').config();
 const router = express.Router();
 
 // 회원가입 라우터
-router.post('/register', async (req, res) => {
+router.post('/signsup', async (req, res) => {
     const { username, password } = req.body;
 
     if (!username || !password) {
