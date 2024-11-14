@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        @font-face {
+            font-family: 'TTHakgyoansimMonggeulmonggeulR';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMonggeulmonggeulR.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: "Albert Sans", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #424242, #1b1b1b);
+        }
+
+        .login-box {
+            width: 300px;
+            margin: 10%;
+            padding-left: 30px;
+            padding-right: 30px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            text-align: center;
+            background-color: none;
+        }
+        
+        .login-box h1 {
+            font-family: 'TTHakgyoansimMonggeulmonggeulR';
+            font-size: 70px;
+            background: linear-gradient(90deg, #9BBCC3, #ABC2E2, #CBA5D1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Input field styling */
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 90%;
+            padding: 15px;
+            margin: 10px 0;
+            background: none;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .login-box input::placeholder {
+            color: #989898;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background: linear-gradient(90deg, #9BBCC3, #ABC2E2, #CBA5D1);
+            border: none;
+            border-radius: 5px;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-box button:hover {
+            opacity: 0.8;
+        }
+
+        .login-box p {
+            color: #ccc;
+            margin-top: 15px;
+        }
+
+        .login-box a {
+            background: linear-gradient(90deg, #9BBCC3, #ABC2E2, #CBA5D1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            text-decoration: none;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h1>HALP</h1>
+    <form>
+        <input type="text" placeholder="Enter ID" required>
+        <input type="password" placeholder="Enter Password" required>
+        <button type="submit">Login</button>
+        <p>I don't have an account. <a href="#">SignUp</a></p>
+    </form>
+</div>
+
+</body>
+</html>
+

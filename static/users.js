@@ -12,7 +12,7 @@ router.post('/signup', async (req, res) => {
         // 기존 사용자 확인
         const [existingUser] = await db.query("SELECT * FROM users WHERE id = ?", [id]);
         if (existingUser.length) {
-            return res.status(400).json({ msg: "User already exists" });
+            return res.status(400).json({ msg: "이미 존재하는 유저입니다." });
         }
 
         // 비밀번호 해싱
