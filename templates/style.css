@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'TTHakgyoansimMonggeulmonggeulR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMonggeulmonggeulR.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'HakgyoansimWoojuR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'HakgyoansimWoojuR';
+    background: radial-gradient(circle, #424242, #1b1b1b);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    padding: 25%;
+    background-color: none;
+    border-radius: 10px;
+}
+
+.input-group {
+    margin-bottom: 5%;
+  }
+
+.input-group label {
+    font-size: 25px;
+    display: block;
+}
+
+.input-group input {
+    font-family: 'HakgyoansimWoojuR';
+    width: 100%;
+    padding: 3%;
+    border: 1px solid  #fff;
+    border-radius: 10px;
+    background: none;
+    font-size: 20px;
+}
+
+.input-group .id-check {
+    background: none;
+    display: flex;
+}
+
+.input-group {
+    margin-right: 5%;
+}
+
+.id-check button {
+    margin-left: 3%;
+    background: linear-gradient(90deg, #9BBCC3, #ABC2E2, #e7cdec);
+    border: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.input-group input::placeholder {
+    color: #989898;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+.box {
+    width: 100%;
+    margin: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 5px solid #dddddd9e;
+    border-radius: 10px;
+    text-align: center;
+    background-color: none;
+}
+
+h1 {
+    font-family: 'TTHakgyoansimMonggeulmonggeulR';
+    font-size: 80px;
+    text-align: center;
+    background: linear-gradient(90deg, #9BBCC3, #ABC2E2, #b779c0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Input field styling */
+.box input[type="text"],
+.box input[type="password"] {
+    font-family: 'HakgyoansimWoojuR';
+    width: 90%;
+    padding: 5%;
+    margin: 2% 0;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.box input::placeholder {
+    color: #989898;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 3%;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #9BBCC3, #ABC2E2, #CBA5D1);
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    font-size: 20px;
+}
+
+.box button:hover {
+    opacity: 0.8;
+}
+
+.box p {
+    color: #ccc;
+    margin-top: 5%;
+}
+
+.box a {
+    background: linear-gradient(90deg, #9BBCC3, #ABC2E2, #CBA5D1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-decoration: none;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}

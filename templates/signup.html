@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>HALP</h1>
+    <div class="input-group">
+        <label for="username" >사용자 이름 입력</label>
+        <input type="text" id="username" placeholder="이름을 입력해 주세요" style="color: #fff; margin-top: 2%;">
+    </div>
+
+    <div class="input-group">
+        <label for="user-id">사용할 아이디 입력</label>
+        <div class="id-check" style="margin-top: 2%;">
+        <input type="text" id="user-id" placeholder="최대 8글자 입력해 주세요" style="color: #fff;">
+        <button style="width: 200px;">중복확인</button>
+        </div>
+    </div>
+
+    <div class="input-group">
+        <label for="password">사용 할 비밀번호 입력</label>
+        <input type="password" id="password" placeholder="영어 대소문자, 숫자, 특수문자 조합의 8-16자" style="color: #fff; margin-top: 2%;">
+    </div>
+
+    <div class="input-group">
+        <label for="confirm-password" style="color: #fff;">비밀번호 확인</label>
+        <input type="password" id="confirm-password" placeholder="비밀번호를 입력해 주세요." style="color: #fff; margin-top: 2%;">
+    </div>
+    <button class="submit-button"><a href="./login.html" style="text-decoration: none;">Done</a></button>
+    </div>
+    </body>
+</html>
