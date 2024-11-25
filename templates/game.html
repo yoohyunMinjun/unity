@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HALP: GAME</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    #unity-container { width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="unity-container"></div>
+  <script>
+    // Unity WebGL 빌드 파일 로드
+    const buildUrl = "/webgl/Build";
+    const loaderUrl = buildUrl + "/UnityLoader.js";
+    
+    // Unity WebGL을 HTML에 로드
+    const loadUnity = () => {
+      const unityContainer = document.getElementById("unity-container");
+      const script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        UnityLoader.instantiate("unity-container", buildUrl + "/Build.json", {
+          onProgress: (unityInstance, progress) => {
+            console.log("Loading Unity WebGL:", progress * 100, "%");
+          }
+        });
+      };
+      document.body.appendChild(script);
+    };
+
+    // Unity WebGL 빌드 파일 로드 실행
+    loadUnity();
+  </script>
+</body>
+</html>
+
